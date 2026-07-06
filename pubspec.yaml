@@ -1,0 +1,60 @@
+name: focus_ai
+description: "Focus AI - Time-based habit tracker mobile application."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  shared_preferences: ^2.5.5
+  uuid: ^4.3.3
+  font_awesome_flutter: ^11.0.0
+  flutter_animate: ^4.5.0
+  sensors_plus: ^7.0.0
+  audioplayers: ^6.8.1 #  Mana shu ko'rinishda bo'lishi kerak
+  fl_chart: ^1.2.0
+  get_it: ^9.2.1
+  google_generative_ai: ^0.4.7
+  flutter_tts: ^4.2.5
+  http: ^1.6.0
+  flutter_local_notifications: ^22.0.1
+  image_picker: ^1.2.2
+  timezone: ^0.11.0
+  home_widget: ^0.9.3
+  google_sign_in: ^6.2.1
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.7.0
+  cloud_firestore: ^5.4.4
+  lottie: ^3.4.0
+  equatable: ^2.0.8 # 👈 MANA SHU QATOR KAM EDI, QO'SHILDI!
+  device_info_plus: ^13.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
+    # Animatsiyalar papkasi va fayllari ulandi:
+    - assets/animations/ai_murabiy.json
+    - assets/animations/status.json
+    - assets/animations/target.json
+    - assets/animations/yuztuban.json
+    - assets/animations/zina.json
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/app_logo.png"
+  min_sdk_android: 21
+
+adaptive_icon_background: "#00000000" # To'liq shaffof (transparent) fon
+adaptive_icon_foreground: "assets/icon/app_logo.png" # Sizning dumaloq rasmingiz
